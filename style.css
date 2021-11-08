@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri&family=Lobster&family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    font-family: sans-serif;
+    text-align: center;
+}
+  /**************/
+ /**  color   **/
+/**************/
+.yellow {
+    background: yellow;
+}
+
+.red {
+    background: red;
+}
+
+.blue {
+    background: blue;
+    color: white;
+}
+
+.black {
+    background: black;
+    color: white;
+}
+
+#black3 {
+    border: white solid 1px;
+}
+
+#three {
+    border-top : 2px white solid;
+}
+
+.white {
+    background: white;
+}
+
+.chocolate {
+    background: chocolate;
+}
+
+  /******************/
+ /**  background  **/
+/******************/
+.background {
+    position: absolute;
+    width: 100vw;
+    z-index: -99;
+
+}
+
+.background div {
+    height: 20rem;
+    border-bottom: black 1px solid;
+}
+
+#halfYellow {
+    height: 10rem;
+}
+  /************/
+ /**  page  **/
+/************/
+
+header {
+    padding-top: 20rem;
+    font-weight: bold;
+    font-size: 6rem;
+    text-align: center;
+    color: white;
+    text-shadow: black 0 0 1rem;
+    font-family: 'El Messiri', sans-serif;
+}
+
+#home a, form, #hello a {
+    box-shadow: white 0 0 1rem;
+}
+
+#home a, #hello a {
+    text-decoration-line: none;
+    display: block;
+    color: white;
+    border: 1px grey solid;
+    border-radius: 1.5rem;
+    background: none;
+    padding: 1rem 1rem;
+    width: 50%;
+    margin: 4rem auto;
+    font-size: 4rem;
+}
+
+.session span {
+    font-size: 2.5rem;
+}
+
+.target div {
+    border-top: 2px black solid;
+}
+
+.target div:hover {
+    transform: scale(1.5);
+    border: 3px double black;
+}
+  /************/
+ /**  form  **/
+/************/
+form {
+    width: 80%;
+    margin: 2rem auto;
+    padding: 2rem 0;
+    color: white;
+    text-align: left;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+}
+
+/**  logIn  **/
+
+#logIn form {
+    text-align: center;
+}
+
+fieldset {
+    margin-bottom: 2rem;
+    padding: 2rem;
+}
+
+input, select {
+    padding: .5rem;
+    font-size: 2.5rem;
+    margin: 40px  auto;
+}
+
+button, footer {
+    font-size: 3rem;
+    border: none;
+}
+
+footer {
+    text-align: center;
+}
+
+i {
+    font-size: 10rem;
+    color: red;
+    text-shadow: black 2px 2px;
+}
+
+
+#minTarget {
+    text-align: center;
+}
+
+#minTarget button {
+    padding: 1rem;
+    border-radius: 50%;
+    background: black;
+}
+
+#logIn footer {
+    margin-top: 40px;
+}
+
+/**  shooting profil  **/
+#profile form div {
+    margin: 15px;
+}
+
+/**  hello  **/
+header span {
+    display: block;
+}
+
+#hello {
+    color: white;
+    text-shadow: black 2px 2px;
+}
+
+.choice {
+    width: 50%;
+    margin: auto;
+    font-size: 3rem;
+
+}

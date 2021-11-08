@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    text-align: center;
+}
+
+/**************/
+/**  color   **/
+/**************/
+.yellow {
+    background: yellow;
+}
+
+.red {
+    background: red;
+}
+
+.blue {
+    background: blue;
+    color: white;
+}
+
+.black {
+    background: black;
+    color: white;
+}
+
+#black3 {
+    border: white solid 1px;
+}
+
+#three {
+    border-top : 2px white solid;
+}
+
+.white {
+    background: white;
+}
+
+.chocolate {
+    background: chocolate;
+}
+
+/** blazon **/
+
+.blazon div {
+    display: inline-block;
+    border: black 0.1rem solid;
+    border-radius: 50%;
+    padding: 3rem;
+}
+
+#ten {
+    width: 6rem;
+    height: 6rem;
+    padding: 1.5rem 0 0 0;
+}
+
+#plus {
+    border-style: dashed;
+    color: black;
+    width: 3rem;
+    height: 3rem;
+    padding: 0;
+
+}
+
