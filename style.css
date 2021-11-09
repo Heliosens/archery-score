@@ -12,12 +12,19 @@ html {
 
 body {
     width: 100%;
-    font-family: sans-serif;
+    font-family: 'El Messiri', sans-serif;
     text-align: center;
 }
+
+section {
+    font-size: 4rem;
+    color: white;
+}
+
   /**************/
  /**  color   **/
 /**************/
+
 .yellow {
     background: yellow;
 }
@@ -55,11 +62,11 @@ body {
   /******************/
  /**  background  **/
 /******************/
-.background {
-    position: absolute;
-    width: 100vw;
-    z-index: -99;
 
+.background {
+    position: fixed;
+    width: 100%;
+    z-index: -99;
 }
 
 .background div {
@@ -70,15 +77,19 @@ body {
 #halfYellow {
     height: 10rem;
 }
+
+a {
+    text-decoration-line: none;
+}
+
   /************/
  /**  page  **/
 /************/
 
 header {
-    padding-top: 20rem;
+    padding-top: 10rem;
     font-weight: bold;
-    font-size: 6rem;
-    text-align: center;
+    font-size: 3rem;
     color: white;
     text-shadow: black 0 0 1rem;
     font-family: 'El Messiri', sans-serif;
@@ -88,16 +99,15 @@ header {
     box-shadow: inset white 0 0 1rem;
 }
 
-#home a, #hello a {
-    text-decoration-line: none;
+#home a, #hello a, #profile {
     display: block;
     color: white;
     border-radius: 1.5rem;
-    background: none;
+    background: black;
     padding: 1rem 1rem;
     width: 50%;
     margin: 4rem auto;
-    font-size: 4rem;
+    font-size: 2rem;
 }
 
 .session span {
@@ -112,13 +122,25 @@ header {
     transform: scale(1.5);
     border: 3px double black;
 }
+
+/**  hello  **/
+header span {
+    display: block;
+}
+
+#hello {
+    color: white;
+    text-shadow: black 2px 2px;
+}
+
   /************/
  /**  form  **/
 /************/
-form {
+
+form, #profile {
     width: 85%;
     margin: 2rem auto;
-    padding: 1rem 0;
+    padding: .5rem;
     color: white;
     background: rgba(0, 0, 0, 0.7);
     border-radius: 15px;
@@ -126,37 +148,41 @@ form {
 
 /**  signIn  **/
 
-fieldset {
+fieldset, #genre {
     display: flex;
-    margin: 1rem;
-    padding: 2rem;
-    font-size: 2rem;
 }
 
-form fieldset:first-child {
-    flex-direction: column;
+fieldset {
+    margin: .5rem;
+    padding: 2rem;
+    font-size: 2rem;
+    text-align: left;
+}
 
+form fieldset {
+    flex-direction: column;
 }
 
 #genre {
-    display: flex;
     justify-content: space-around;
+    width: 100%;
+    text-align: center;
 }
 
-.genre {
+#genre span {
     border: 1px white solid;
     border-radius: 10%;
     margin: 1rem;
     padding: 1rem;
     background: black;
     flex-basis: 33%;
-    text-align: center;
 }
 
 input, select {
     padding: .5rem;
     font-size: 2.5rem;
-    margin: 40px  auto;
+    margin: 2rem 0;
+    width: 80%;
 }
 
 button, footer {
@@ -164,12 +190,22 @@ button, footer {
     border: none;
 }
 
+/**  shooting profil  **/
+#shoot form div {
+    margin: 15px;
+}
+
+
+  /*************/
+ /** footer  **/
+/*************/
+
 footer {
     text-align: center;
 }
 
-i {
-    font-size: 10rem;
+a i {
+    font-size: 5rem;
     color: red;
     text-shadow: black 2px 2px;
 }
@@ -188,24 +224,25 @@ i {
     margin-top: 40px;
 }
 
-/**  shooting profil  **/
-#profile form div {
-    margin: 15px;
-}
-
-/**  hello  **/
-header span {
-    display: block;
-}
-
-#hello {
-    color: white;
-    text-shadow: black 2px 2px;
-}
 
 .choice {
     width: 50%;
     margin: auto;
     font-size: 3rem;
+}
+
+@media screen and (max-width: 600px) {
+
+    .background {
+        width: 100%;
+    }
+
+    .background div {
+        height: 12rem;
+    }
+
+    #halfYellow {
+        height: 6rem;
+    }
 
 }

@@ -24,15 +24,17 @@
         <span>Profil de la séance</span>
     </header>
 
-    <section id="profile">
+    <section id="shoot">
         <form action="#" method="get">
             <fieldset>
-                <legend>type d'arc & distance</legend>
+                <label for="range">type d'arc</label>
                 <select name="bow" id="bow">
                     <option value="classic">recurve / classic</option>
                     <option value="longbow">longbow</option>
-                    <option value="compound">arc à poulies</option>
+                    <option value="compound">compound / arc à poulies</option>
                 </select>
+                <input name="viewfinder" type="radio">
+                <label for="range">distance</label>
                 <select name="range" id="range">
                     <option value="5">5 m</option>
                     <option value="10">10 m</option>
@@ -51,11 +53,10 @@
             </select>
 
             <div id="minTarget">
-                <button type="submit">
-                    <a href="archerySession.html">
-                        <i class="fas fa-bullseye" title="Au pas de tir !"></i>
-                    </a>
-                </button>
+                <!--                <button type="submit">-->
+                <a href="archerySession.html">
+                    <i class="fas fa-bullseye"></i>
+                </a>
             </div>
         </form>
     </section>
