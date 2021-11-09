@@ -99,7 +99,7 @@ header {
     box-shadow: inset white 0 0 1rem;
 }
 
-#home a, #hello a, #profile {
+#home a, #hello a {
     display: block;
     color: white;
     border-radius: 1.5rem;
@@ -133,11 +133,26 @@ header span {
     text-shadow: black 2px 2px;
 }
 
+/** profile **/
+#profile div {
+    margin: .5rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.choice {
+    width: 50%;
+    margin: auto;
+    font-size: 3rem;
+}
+
   /************/
  /**  form  **/
 /************/
 
-form, #profile {
+form {
     width: 85%;
     margin: 2rem auto;
     padding: .5rem;
@@ -225,11 +240,7 @@ a i {
 }
 
 
-.choice {
-    width: 50%;
-    margin: auto;
-    font-size: 3rem;
-}
+
 
 @media screen and (max-width: 600px) {
 
