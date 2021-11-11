@@ -21,6 +21,10 @@ section {
     color: white;
 }
 
+a {
+    text-decoration-line: none;
+}
+
   /**************/
  /**  color   **/
 /**************/
@@ -60,12 +64,8 @@ section {
     background: chocolate;
 }
 
-form, .modal #number {
+form, .modal #number, #shoot {
     background: rgba(0, 0, 0, 0.7);
-}
-
-.modal #number {
-    border-radius: 15px;
 }
 
   /******************/
@@ -87,13 +87,13 @@ form, .modal #number {
     height: 10rem;
 }
 
-a {
-    text-decoration-line: none;
-}
-
   /************/
  /**  page  **/
 /************/
+
+.modal #number {
+    border-radius: 15px;
+}
 
 header {
     margin: 0 3rem;
@@ -105,11 +105,11 @@ header {
     font-family: 'El Messiri', sans-serif;
 }
 
-#home a, form, #hello a {
+#home a, form, #shoot {
     box-shadow: inset white 0 0 1rem;
 }
 
-#home a, #hello a {
+#home a {
     display: block;
     color: white;
     border-radius: 1.5rem;
@@ -129,147 +129,147 @@ header {
 }
 
 /**  hello  **/
-header span {
-    display: block;
-}
+/*header span {*/
+/*    display: block;*/
+/*}*/
 
-#hello {
-    color: white;
-    text-shadow: black 2px 2px;
-}
+/*#hello {*/
+/*    color: white;*/
+/*    text-shadow: black 2px 2px;*/
+/*}*/
 
-/** profile **/
-#profile div {
-    margin: .5rem;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-evenly;
-}
+/*!** profile **!*/
+/*#profile div {*/
+/*    margin: .5rem;*/
+/*    display: flex;*/
+/*    flex-wrap: wrap;*/
+/*    align-items: center;*/
+/*    justify-content: space-evenly;*/
+/*}*/
 
-.choice {
-    width: 50%;
-    margin: auto;
-    font-size: 3rem;
-}
+/*.choice {*/
+/*    width: 50%;*/
+/*    margin: auto;*/
+/*    font-size: 3rem;*/
+/*}*/
 
-.target > div {
-    height: 6rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+/*.target > div {*/
+/*    height: 6rem;*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*}*/
 
-#plus, #ten {
-    height: 4rem;
-}
+/*#plus, #ten {*/
+/*    height: 4rem;*/
+/*}*/
 
-#number {
-    font-size: 2rem;
-}
+/*#number {*/
+/*    font-size: 2rem;*/
+/*}*/
 
-  /************/
- /**  form  **/
-/************/
+/*  !************!*/
+/* !**  form  **!*/
+/*!************!*/
 
-form {
-    width: 85%;
-    margin: 2rem auto;
-    padding: .5rem;
-    color: white;
-    border-radius: 15px;
-}
+/*form, #shoot {*/
+/*    width: 85%;*/
+/*    margin: 2rem auto;*/
+/*    padding: .5rem;*/
+/*    color: white;*/
+/*    border-radius: 15px;*/
+/*}*/
 
-/**  signIn  **/
+/*!**  signIn  **!*/
 
-fieldset, #genre {
-    display: flex;
-}
+/*fieldset, #genre {*/
+/*    display: flex;*/
+/*}*/
 
-fieldset {
-    margin: .5rem;
-    padding: 2rem;
-    font-size: 2rem;
-    text-align: left;
-}
+/*fieldset {*/
+/*    margin: .5rem;*/
+/*    padding: 2rem;*/
+/*    font-size: 2rem;*/
+/*    text-align: left;*/
+/*}*/
 
-form fieldset {
-    flex-direction: column;
-}
+/*form fieldset {*/
+/*    flex-direction: column;*/
+/*}*/
 
-#genre {
-    justify-content: space-around;
-    width: 100%;
-    text-align: center;
-}
+/*#genre {*/
+/*    justify-content: space-around;*/
+/*    width: 100%;*/
+/*    text-align: center;*/
+/*}*/
 
-#genre span {
-    border: 1px white solid;
-    border-radius: 10%;
-    margin: 1rem;
-    padding: 1rem;
-    background: black;
-    flex-basis: 33%;
-}
+/*#genre span {*/
+/*    border: 1px white solid;*/
+/*    border-radius: 10%;*/
+/*    margin: 1rem;*/
+/*    padding: 1rem;*/
+/*    background: black;*/
+/*    flex-basis: 33%;*/
+/*}*/
 
-input, select {
-    padding: .5rem;
-    font-size: 2.5rem;
-    margin: 2rem 0;
-    width: 80%;
-}
+/*input, select {*/
+/*    padding: .5rem;*/
+/*    font-size: 2.5rem;*/
+/*    margin: 2rem 0;*/
+/*    width: 80%;*/
+/*}*/
 
-button, footer {
-    font-size: 3rem;
-    border: none;
-}
+/*button, footer {*/
+/*    font-size: 3rem;*/
+/*    border: none;*/
+/*}*/
 
-/**  shooting profil  **/
-#shoot form div {
-    margin: 15px;
-}
+/*!**  shooting profil  **!*/
+/*#shoot form div {*/
+/*    margin: 15px;*/
+/*}*/
 
 
-  /*************/
- /** footer  **/
-/*************/
+/*  !*************!*/
+/* !** footer  **!*/
+/*!*************!*/
 
-footer {
-    text-align: center;
-}
+/*footer {*/
+/*    text-align: center;*/
+/*}*/
 
-a i {
-    font-size: 5rem;
-    color: red;
-    text-shadow: black 2px 2px;
-}
+/*a i {*/
+/*    font-size: 5rem;*/
+/*    color: red;*/
+/*    text-shadow: black 2px 2px;*/
+/*}*/
 
-#minTarget {
-    text-align: center;
-}
+/*#minTarget {*/
+/*    text-align: center;*/
+/*}*/
 
-#minTarget button {
-    padding: 1rem;
-    border-radius: 50%;
-    background: black;
-}
+/*#minTarget button {*/
+/*    padding: 1rem;*/
+/*    border-radius: 50%;*/
+/*    background: black;*/
+/*}*/
 
-#logIn footer {
-    margin-top: 40px;
-}
-  /*************/
- /**  modal  **/
-/*************/
+/*#logIn footer {*/
+/*    margin-top: 40px;*/
+/*}*/
+/*  !*************!*/
+/* !**  modal  **!*/
+/*!*************!*/
 
-.modal {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+/*.modal {*/
+/*    position: absolute;*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*}*/
 
 @media screen and (max-width: 600px) {
 
