@@ -1,34 +1,66 @@
-let main = document.querySelector("main");
+let main = document.querySelector('main');
 let target = document.querySelector('.target').getElementsByTagName('div');
+let fly = document.getElementById('fly');
+let modal = document.querySelector('.modal');
+let final = document.getElementById('final');
+let go = document.querySelector('.fa-long-arrow-alt-right');
+
 
 main.style.width = innerWidth + "px";
 main.style.height = innerHeight + "px";
 
-let score1 = 0;
-let score2 = 0;
-let score3 = 0;
-let volet = 0;
+let arrow1 = 0;
+let arrow2 = 0;
+let arrow3 = 0;
+let score = 0;
 let total = 0;
 let a = 0;
+let recap = [
+    ["", "", ""],
+    ["", "", ""],
+    ["", "", ""],
+    ["", "", ""],
+    ["", "", ""],
+    ["", "", ""],
+    ["", "", ""],
+    ["", "", ""],
+    ["", "", ""],
+    ["", "", ""],
+    ["", "", ""],
+    ["", "", ""],
+    ["", "", ""],
+    ["", "", ""],
+    ["", "", ""],
+    ["", "", ""],
+    ["", "", ""],
+    ["", "", ""],
+    ["", "", ""],
+    ["", "", ""],
+]
+
 for(let i = 0 ; i < target.length ; i++){
     target[i].addEventListener('click', function (){
         switch (a){
             case 0 :
-                score1 = i;
+                arrow1 = i;
                 a++
                 break;
             case 1 :
-                score2 = i;
+                arrow2 = i;
                 a++
                 break;
             case 2 :
-                score3 = i;
-                console.log(score1, score2, score3);
-                volet = score1 + score2 + score3;
-                total += volet;
-                console.log("volet = " + volet);
-                console.log("total = " + total);
-                a = 0;
+                arrow3 = i;
+                score = arrow1 + arrow2 + arrow3;
+                total += score;
+                console.log(total);
+                modal.style.display = "flex";
+                fly.innerHTML = arrow1 + " " + arrow2 + " " + arrow3 + "<br/>" + score + " points";
+
+                go.addEventListener('mouseup', function (){
+
+                })
+
                 break;
         }
     })
