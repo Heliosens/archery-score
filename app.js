@@ -15,28 +15,9 @@ let arrow3 = 0;
 let score = 0;
 let total = 0;
 let a = 0;
-let recap = [
-    ["", "", ""],
-    ["", "", ""],
-    ["", "", ""],
-    ["", "", ""],
-    ["", "", ""],
-    ["", "", ""],
-    ["", "", ""],
-    ["", "", ""],
-    ["", "", ""],
-    ["", "", ""],
-    ["", "", ""],
-    ["", "", ""],
-    ["", "", ""],
-    ["", "", ""],
-    ["", "", ""],
-    ["", "", ""],
-    ["", "", ""],
-    ["", "", ""],
-    ["", "", ""],
-    ["", "", ""],
-]
+let recap = [];
+let turn = 0;
+
 
 for(let i = 0 ; i < target.length ; i++){
     target[i].addEventListener('click', function (){
@@ -57,11 +38,17 @@ for(let i = 0 ; i < target.length ; i++){
                 modal.style.display = "flex";
                 fly.innerHTML = arrow1 + " " + arrow2 + " " + arrow3 + "<br/>" + score + " points";
 
+
                 go.addEventListener('mouseup', function (){
-
+                    recap[turn] = [arrow1, arrow2, arrow3];
+                    console.log(recap);
+                    turn++;
+                    console.log(turn);
+                    modal.style.display = "none";
                 })
-
+                a = 0;
                 break;
         }
+
     })
 }
