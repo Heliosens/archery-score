@@ -169,16 +169,15 @@ header {
     justify-content: center;
 }
 
-#ten {
-    flex-direction: row;
-    align-items: flex-start;
-}
-
 #plus {
-    height: 50%;
+    position: absolute;
+    top: 0;
+    left: 40%;
+    width: 20%;
     border-radius: 50% / 0 0 100% 100%;
     border: black 1px dashed;
-    flex-basis: 30%;
+    font-size: 1rem;
+    color: red;
 }
 
 button, footer {

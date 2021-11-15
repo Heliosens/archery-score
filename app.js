@@ -43,7 +43,6 @@ for(let i = 0 ; i < target.length ; i++){
 
                 console.log("volet = " + fly, "+ :" + plus, "score actuel : " + currentScore);
 
-
                 break;
             case 1 :
                 if (i === 11){
