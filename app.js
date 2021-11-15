@@ -19,10 +19,11 @@ let shoot = 0;
 let a1 = 0;
 let a2 = 0;
 let a3 = 0;
+let plus = 0;
 let fly = 0; // score for a fly
 let currentScore = 0;
 
-// todo increase "10+" for target[i] = 11
+// todo increase "10+" for target[i = 11]
 // user click on 3 value = display + ask validation
 // let test = shoot % 3;
 for(let i = 0 ; i < target.length ; i++){
@@ -31,30 +32,57 @@ for(let i = 0 ; i < target.length ; i++){
 
         switch (shoot % 3){
             case 0 :
-                a1 = i;
-                shoot++;
+                if (i === 11){
+                    plus++;
+                    a1 += 0;
+                }
+                else {
+                    a1 = i;
+                    shoot++;
+                }
+
+                console.log("volet = " + fly, "+ :" + plus, "score actuel : " + currentScore);
+
+
                 break;
             case 1 :
-                a2 = i;
-                shoot++;
+                if (i === 11){
+                    a2 += 0;
+                }
+                else {
+                    a2 = i;
+                    shoot++;
+                }
+                console.log("volet = " + fly, "+ :" + plus, "score actuel : " + currentScore);
+
                 break;
             case 2 :
                 // if fly <= 20, or shoot <= 60
-                a3 = i;
+                if(i === 11){
+                    a3 += 0;
+                    plus++;
+                }
+                else {
+                    a3 = i;
+                    shoot++;
+                }
+
                 console.log(a1, a2, a3);
 
                 fly = a1 + a2 + a3;
                 currentScore += fly;
-                console.log("volet = " + fly);
-                console.log("score actuel : " + currentScore);
-                shoot++;
+                console.log("volet = " + fly, "+ :" + plus, "score actuel : " + currentScore);
+
+
 
                 if (shoot === 9){
                     console.log("TOTAL = " + currentScore);
+                    console.log("+ :" + plus);
                     shoot = 0;
                     a1 = 0;
                     a2 = 0;
                     a3 = 0;
+                    plus = 0;
                     fly = 0;
                     currentScore = 0;
                 }
