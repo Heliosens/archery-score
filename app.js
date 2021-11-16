@@ -1,13 +1,21 @@
 let main = document.querySelector('main');
+let userChoice = document.getElementById('number').getElementsByTagName('a');
+console.log(userChoice);
+
 let target = document.querySelector('.target').getElementsByTagName('div');
-let userChoice = document.getElementById('userChoice');
-let flyNbr = parseInt(document.getElementById('flyNbr').innerHTML);
-let fullScreen = document.querySelector('.fullScreen');
-let final = document.getElementById('final');
-let go = document.querySelector('.fa-long-arrow-alt-right');
+// let flyNbr = parseInt(document.getElementById('flyNbr').innerHTML);
+// let fullScreen = document.querySelector('.fullScreen');
+// let final = document.getElementById('final');
+// let go = document.querySelector('.fa-long-arrow-alt-right');
 
 main.style.width = innerWidth + "px";
 main.style.height = innerHeight + "px";
+
+for(let i = 0 ; i < userChoice.length ; i++){
+    userChoice[i].addEventListener('click', function (){
+        console.log(userChoice[i].innerHTML);
+    })
+}
 
 let totalScore = 0;
 
