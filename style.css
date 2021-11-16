@@ -188,7 +188,7 @@ a i {
  /**  modal  **/
 /*************/
 
-.fullScreen {
+#fullScreen {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -199,3 +199,6 @@ a i {
     align-items: center;
 }
 
+#final {
+    display: none;
+}

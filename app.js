@@ -4,6 +4,8 @@ let homeScreen = document.getElementById('homeScreen');
 let userChoice = document.getElementById('number').getElementsByTagName('span');
 // give main size
 let main = document.querySelector('main');
+// modal window to display result
+let fullScreen = document.getElementById('fullScreen');
 // listen target div
 let target = document.querySelector('.target').getElementsByTagName('div');
 // display current nbr of fly, current point, ending score
@@ -26,10 +28,7 @@ for(let i = 0 ; i < userChoice.length ; i++){
     })
 }
 
-
-
 // shoot = 1 arrow, fly = 3 arrows
-// 1 session = 20 fly = 60 shoots  => totalScore max = 10 * 3 * 20 = 600 points
 
 let shoot = 0;
 let a1 = 0;
@@ -37,9 +36,8 @@ let a2 = 0;
 let a3 = 0;
 let plus = 0;
 let fly = 0; // score for a fly
-let nbrFly = 0;
+let nbrFly = 0; // current number of fly
 let currentScore = 0;
-let totalScore = 0;
 
 // user click on 3 value = display + ask validation
 // let test = shoot % 3;
@@ -82,30 +80,34 @@ for(let i = 0 ; i < target.length ; i++){
                 shoot++;
                 nbrFly++;
 
+                // intermediate score
                 fly = a1 + a2 + a3;
                 currentScore += fly;
 
-                flyNbr.innerHTML = nbrFly.toString();
-                point.innerHTML = a1 + " " + a2 + " " + a3 + " = " + fly;
-                final.innerHTML = currentScore;
-
-
+                flyNbr.innerHTML = nbrFly + " sur " + totalNbrOfFly;
+                point.innerHTML = a1 + " " + a2 + " " + a3 + " = " + fly + " points";
+                if(plus > 0){
+                    point.innerHTML += "<br> 10+ = " + plus;
+                }
+                fullScreen.style.display = 'flex';
+                go.addEventListener('click', function (){
+                    fullScreen.style.display = 'none';
+                })
 
                 if (shoot === totalNbrOfFly * 3){
-                    console.log("TOTAL = " + currentScore);
-                    console.log("+ :" + plus);
+                    final.style.display = "unset";
+                    final.innerHTML = "Score final : " + currentScore;
+
                     shoot = 0;
                     a1 = 0;
                     a2 = 0;
                     a3 = 0;
                     plus = 0;
                     fly = 0;
+                    nbrFly = 0;
                     currentScore = 0;
                 }
                 break;
             }
-
-
     })
 }
-
