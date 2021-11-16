@@ -1,12 +1,18 @@
 // get elements
+// modal window for user choice
 let homeScreen = document.getElementById('homeScreen');
-let main = document.querySelector('main');
 let userChoice = document.getElementById('number').getElementsByTagName('span');
+
+// give main size
+let main = document.querySelector('main');
+// listen target div
 let target = document.querySelector('.target').getElementsByTagName('div');
-// let flyNbr = parseInt(document.getElementById('flyNbr').innerHTML);
-// let fullScreen = document.querySelector('.fullScreen');
-// let final = document.getElementById('final');
-// let go = document.querySelector('.fa-long-arrow-alt-right');
+// display current nbr of fly, current point, ending score
+let flyNbr = document.getElementById('flyNbr');
+let point = document.getElementById('point');
+let final = document.getElementById('final');
+// validate data
+let go = document.querySelector('.fa-long-arrow-alt-right');
 
 main.style.width = innerWidth + "px";
 main.style.height = innerHeight + "px";
@@ -42,6 +48,7 @@ for(let i = 0 ; i < target.length ; i++){
 
         switch (shoot % 3){
             case 0 :
+                // if 10+
                 if (i === 11){
                     plus++;
                     a1 = 10;
@@ -50,9 +57,10 @@ for(let i = 0 ; i < target.length ; i++){
                     a1 = i;
                 }
                 shoot++;
-
+                console.log("fleche " + shoot + " : " + a1 + "point et " + plus + " 10+" );
                 break;
             case 1 :
+                // if 10+
                 if (i === 11){
                     plus++;
                     a2 = 10;
@@ -61,18 +69,20 @@ for(let i = 0 ; i < target.length ; i++){
                     a2 = i;
                 }
                 shoot++;
-
+                console.log("fleche " + shoot + " : " + a2 + "point et " + plus + " 10+" );
                 break;
             case 2 :
+                // if 10+
                 if(i === 11){
                     a3 = 10;
                     plus++;
                 }
                 else {
                     a3 = i;
-
                 }
                 shoot++;
+                console.log("fleche " + shoot + " : " + a3 + " point et " + plus + " 10+" );
+
                 fly = a1 + a2 + a3;
                 currentScore += fly;
 
