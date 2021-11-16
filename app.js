@@ -1,7 +1,7 @@
+// get elements
+let homeScreen = document.getElementById('homeScreen');
 let main = document.querySelector('main');
-let userChoice = document.getElementById('number').getElementsByTagName('a');
-console.log(userChoice);
-
+let userChoice = document.getElementById('number').getElementsByTagName('span');
 let target = document.querySelector('.target').getElementsByTagName('div');
 // let flyNbr = parseInt(document.getElementById('flyNbr').innerHTML);
 // let fullScreen = document.querySelector('.fullScreen');
@@ -11,9 +11,13 @@ let target = document.querySelector('.target').getElementsByTagName('div');
 main.style.width = innerWidth + "px";
 main.style.height = innerHeight + "px";
 
+let flyChoice = 0;
+
 for(let i = 0 ; i < userChoice.length ; i++){
     userChoice[i].addEventListener('click', function (){
-        console.log(userChoice[i].innerHTML);
+        flyChoice = userChoice[i].innerHTML;
+        homeScreen.style.display = "none";
+        console.log(flyChoice);
     })
 }
 

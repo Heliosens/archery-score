@@ -21,13 +21,15 @@ a {
 }
 
   /*****************/
- /** userChoice  **/
+ /** homeScreen  **/
 /*****************/
 
-#userChoice {
+#homeScreen {
     position: absolute;
     top: 0;
     left: 0;
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -75,15 +77,9 @@ section {
     color: white;
 }
 
-#container {
-    width: 100vw;
-    height: 100vh;
-    margin: auto;
-}
-
-  /*******************/
- /** index + modal **/
-/*******************/
+  /***********/
+ /** modal **/
+/***********/
 
 .modal {
     display: flex;
@@ -133,7 +129,7 @@ header {
     /*display: none;*/
 }
 
-#number a, .result {
+#number span, .result {
     color: white;
     border-radius: 1.5rem;
     background: #00008b80;
