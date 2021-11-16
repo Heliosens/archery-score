@@ -2,7 +2,6 @@
 // modal window for user choice
 let homeScreen = document.getElementById('homeScreen');
 let userChoice = document.getElementById('number').getElementsByTagName('span');
-
 // give main size
 let main = document.querySelector('main');
 // listen target div
@@ -17,17 +16,17 @@ let go = document.querySelector('.fa-long-arrow-alt-right');
 main.style.width = innerWidth + "px";
 main.style.height = innerHeight + "px";
 
-let flyChoice = 0;
+let totalNbrOfFly = 0;
 
 for(let i = 0 ; i < userChoice.length ; i++){
     userChoice[i].addEventListener('click', function (){
-        flyChoice = userChoice[i].innerHTML;
+        totalNbrOfFly = userChoice[i].innerHTML;
         homeScreen.style.display = "none";
-        console.log(flyChoice);
+        console.log(totalNbrOfFly);
     })
 }
 
-let totalScore = 0;
+
 
 // shoot = 1 arrow, fly = 3 arrows
 // 1 session = 20 fly = 60 shoots  => totalScore max = 10 * 3 * 20 = 600 points
@@ -38,7 +37,9 @@ let a2 = 0;
 let a3 = 0;
 let plus = 0;
 let fly = 0; // score for a fly
+let nbrFly = 0;
 let currentScore = 0;
+let totalScore = 0;
 
 // user click on 3 value = display + ask validation
 // let test = shoot % 3;
@@ -47,7 +48,7 @@ for(let i = 0 ; i < target.length ; i++){
     target[i].addEventListener('click', function (){
 
         switch (shoot % 3){
-            case 0 :
+            case 0 : // first arrow
                 // if 10+
                 if (i === 11){
                     plus++;
@@ -57,9 +58,8 @@ for(let i = 0 ; i < target.length ; i++){
                     a1 = i;
                 }
                 shoot++;
-                console.log("fleche " + shoot + " : " + a1 + "point et " + plus + " 10+" );
                 break;
-            case 1 :
+            case 1 : // second arrow
                 // if 10+
                 if (i === 11){
                     plus++;
@@ -69,9 +69,8 @@ for(let i = 0 ; i < target.length ; i++){
                     a2 = i;
                 }
                 shoot++;
-                console.log("fleche " + shoot + " : " + a2 + "point et " + plus + " 10+" );
                 break;
-            case 2 :
+            case 2 : // third arrow
                 // if 10+
                 if(i === 11){
                     a3 = 10;
@@ -81,12 +80,18 @@ for(let i = 0 ; i < target.length ; i++){
                     a3 = i;
                 }
                 shoot++;
-                console.log("fleche " + shoot + " : " + a3 + " point et " + plus + " 10+" );
+                nbrFly++;
 
                 fly = a1 + a2 + a3;
                 currentScore += fly;
 
-                if (shoot === 9){
+                flyNbr.innerHTML = nbrFly.toString();
+                point.innerHTML = a1 + " " + a2 + " " + a3 + " = " + fly;
+                final.innerHTML = currentScore;
+
+
+
+                if (shoot === totalNbrOfFly * 3){
                     console.log("TOTAL = " + currentScore);
                     console.log("+ :" + plus);
                     shoot = 0;
@@ -99,6 +104,8 @@ for(let i = 0 ; i < target.length ; i++){
                 }
                 break;
             }
+
+
     })
 }
 
