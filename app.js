@@ -24,7 +24,6 @@ for(let i = 0 ; i < userChoice.length ; i++){
     userChoice[i].addEventListener('click', function (){
         totalNbrOfFly = userChoice[i].innerHTML;
         homeScreen.style.display = "none";
-        console.log(totalNbrOfFly);
     })
 }
 
