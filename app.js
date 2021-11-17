@@ -14,6 +14,7 @@ let flyNbr = document.getElementById('flyNbr');
 // todo from id=point to class=point
 let point = document.getElementsByClassName('point');
 
+let endScreen = document.getElementById('endScreen');
 let final = document.getElementById('final');
 // validate data
 let go = document.querySelector('.fa-long-arrow-alt-right');
@@ -83,21 +84,26 @@ for(let i = 0 ; i < target.length ; i++){
                 nbrFly++;
 
                 // intermediate score
-                fly = a1 + a2 + a3;
+                fly = [a1, a2, a3];
+                console.log(fly);
                 currentScore += fly;
 
                 flyNbr.innerHTML = nbrFly + " sur " + totalNbrOfFly;
-                point.innerHTML = a1 + " " + a2 + " " + a3 + " = " + fly + " points";
-                if(plus > 0){
-                    point.innerHTML += "<br> 10+ = " + plus;
+
+                for (let i = 0 ; i < point.length ; i++){
+                    point[i].innerHTML = fly[i].toString();
+                    if(plus > 0){
+                        point[i].innerHTML += "<br> 10+ = " + plus;
+                    }
                 }
+
                 fullScreen.style.display = 'flex';
                 go.addEventListener('click', function (){
                     fullScreen.style.display = 'none';
                 })
 
                 if (shoot === totalNbrOfFly * 3){
-                    final.style.display = "unset";
+                    endScreen.style.display = "unset";
                     final.innerHTML = "Score final : " + currentScore;
 
                     shoot = 0;

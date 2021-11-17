@@ -288,6 +288,8 @@ a i {
 }
 
 .modal {
+    height: 80%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -297,14 +299,13 @@ a i {
     margin: 1rem auto;
     padding: 1rem 1rem;
     box-shadow: inset white 0 0 1rem;
-    height: 80%;
-    width: 80%;
 }
 
-.modal footer {
+#result {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
 }
 
 .fa-long-arrow-alt-right {
@@ -330,6 +331,7 @@ a i {
 .point {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 #final {
@@ -337,15 +339,22 @@ a i {
 }
 
 #number span, .point {
-    color: white;
     border-radius: 1.5rem;
     background: #00008b80;
-    flex-basis: 30%;
-    width: 60%;
+
     box-shadow: inset #2196f3 0 0 1rem;
     display: flex;
-    justify-content: center;
     align-items: center;
+}
+
+.point {
+    justify-content: space-evenly;
+}
+
+#number span {
+    width: 60%;
+    flex-basis: 30%;
+    justify-content: center;
 }
 
 /*@media screen and (max-width: 600px) {*/
