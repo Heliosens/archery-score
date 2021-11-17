@@ -17,7 +17,7 @@ body {
 }
 
 section {
-    font-size: 4rem;
+    font-size: 200%;
     color: white;
 }
 
@@ -27,6 +27,10 @@ section {
 
 .yellow {
     background: yellow;
+}
+
+.yellow span {
+    margin: 0 auto;
 }
 
 .red {
@@ -60,32 +64,32 @@ section {
     background: chocolate;
 }
 
-form, .modal #number {
-    background: rgba(0, 0, 0, 0.7);
-}
+/*form, .modal #number {*/
+/*    background: rgba(0, 0, 0, 0.7);*/
+/*}*/
 
-.modal #number {
-    border-radius: 15px;
-}
+/*.modal #number {*/
+/*    border-radius: 15px;*/
+/*}*/
 
-  /******************/
- /**  background  **/
-/******************/
+/*  !******************!*/
+/* !**  background  **!*/
+/*!******************!*/
 
-.background {
-    position: fixed;
-    width: 100%;
-    z-index: -99;
-}
+/*.background {*/
+/*    position: fixed;*/
+/*    width: 100%;*/
+/*    z-index: -99;*/
+/*}*/
 
-.background div {
-    height: 20rem;
-    border-bottom: black 1px solid;
-}
+/*.background div {*/
+/*    height: 20rem;*/
+/*    border-bottom: black 1px solid;*/
+/*}*/
 
-#halfYellow {
-    height: 10rem;
-}
+/*#halfYellow {*/
+/*    height: 10rem;*/
+/*}*/
 
 a {
     text-decoration-line: none;
@@ -105,165 +109,186 @@ header {
     font-family: 'El Messiri', sans-serif;
 }
 
-#home a, form, #hello a {
-    box-shadow: inset white 0 0 1rem;
-}
+/*#home a, form, #hello a {*/
+/*    box-shadow: inset white 0 0 1rem;*/
+/*}*/
 
-#home a, #hello a {
-    display: block;
-    color: white;
-    border-radius: 1.5rem;
-    background: black;
-    padding: 1rem 1rem;
-    width: 50%;
-    margin: 4rem auto;
-    font-size: 2rem;
-}
+/*#home a, #hello a {*/
+/*    display: block;*/
+/*    color: white;*/
+/*    border-radius: 1.5rem;*/
+/*    background: black;*/
+/*    padding: 1rem 1rem;*/
+/*    width: 50%;*/
+/*    margin: 4rem auto;*/
+/*    font-size: 2rem;*/
+/*}*/
 
-.session span {
-    font-size: 2.5rem;
-}
-
-.target div {
-    border-top: 2px black solid;
-}
-
-/**  hello  **/
-header span {
-    display: block;
-}
-
-#hello {
-    color: white;
-    text-shadow: black 2px 2px;
-}
-
-/** profile **/
-#profile div {
-    margin: .5rem;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-.choice {
-    width: 50%;
-    margin: auto;
-    font-size: 3rem;
-}
-
-.target > div {
-    height: 6rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-#plus, #ten {
-    height: 4rem;
-}
-
-#number {
-    font-size: 2rem;
-}
-
-  /************/
- /**  form  **/
-/************/
-
-form {
-    width: 85%;
-    margin: 2rem auto;
-    padding: .5rem;
-    color: white;
-    border-radius: 15px;
-}
-
-/**  signIn  **/
-
-fieldset, #genre {
-    display: flex;
-}
-
-fieldset {
-    margin: .5rem;
-    padding: 2rem;
-    font-size: 2rem;
-    text-align: left;
-}
-
-form fieldset {
-    flex-direction: column;
-}
-
-#genre {
-    justify-content: space-around;
-    width: 100%;
-    text-align: center;
-}
-
-#genre span {
-    border: 1px white solid;
-    border-radius: 10%;
-    margin: 1rem;
-    padding: 1rem;
-    background: black;
-    flex-basis: 33%;
-}
-
-input, select {
-    padding: .5rem;
-    font-size: 2.5rem;
-    margin: 2rem 0;
-    width: 80%;
-}
-
-button, footer {
-    font-size: 3rem;
-    border: none;
-}
-
-/**  shooting profil  **/
-#shoot form div {
-    margin: 15px;
-}
+/*.session span {*/
+/*    font-size: 2.5rem;*/
+/*}*/
 
 
-  /*************/
- /** footer  **/
-/*************/
 
-footer {
-    text-align: center;
-}
+/*!**  hello  **!*/
+/*header span {*/
+/*    display: block;*/
+/*}*/
 
-a i {
-    font-size: 5rem;
-    color: red;
-    text-shadow: black 2px 2px;
-}
+/*#hello {*/
+/*    color: white;*/
+/*    text-shadow: black 2px 2px;*/
+/*}*/
 
-#minTarget {
-    text-align: center;
-}
+/*!** profile **!*/
+/*#profile div {*/
+/*    margin: .5rem;*/
+/*    display: flex;*/
+/*    flex-wrap: wrap;*/
+/*    align-items: center;*/
+/*    justify-content: space-evenly;*/
+/*}*/
 
-#minTarget button {
-    padding: 1rem;
-    border-radius: 50%;
-    background: black;
-}
+/*.choice {*/
+/*    width: 50%;*/
+/*    margin: auto;*/
+/*    font-size: 3rem;*/
+/*}*/
 
-#logIn footer {
-    margin-top: 40px;
-}
-  /*************/
- /**  modal  **/
-/*************/
+/*!*  target *!*/
+/*.target {*/
+/*    height: 100%;*/
+/*    width: 100%;*/
+/*    display: flex;*/
+/*    flex-direction: column-reverse;*/
+/*}*/
 
-.modal {
+/*.target > div {*/
+/*    height: 6rem;*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+
+/*    border-top: 1px black solid;*/
+/*    flex-basis: 10%;*/
+
+/*    border-top: 2px black solid;*/
+/*}*/
+
+/*#plus {*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    left: 40%;*/
+/*    width: 20%;*/
+/*    height: 5%;*/
+/*    border-radius: 50% / 0 0 100% 100%;*/
+/*    border: black 1px dashed;*/
+/*    font-size: 5rem;*/
+/*}*/
+
+/*#number {*/
+/*    font-size: 2rem;*/
+/*}*/
+
+/*  !************!*/
+/* !**  form  **!*/
+/*!************!*/
+
+/*form {*/
+/*    width: 85%;*/
+/*    margin: 2rem auto;*/
+/*    padding: .5rem;*/
+/*    color: white;*/
+/*    border-radius: 15px;*/
+/*}*/
+
+/*!**  signIn  **!*/
+
+/*fieldset, #genre {*/
+/*    display: flex;*/
+/*}*/
+
+/*fieldset {*/
+/*    margin: .5rem;*/
+/*    padding: 2rem;*/
+/*    font-size: 2rem;*/
+/*    text-align: left;*/
+/*}*/
+
+/*form fieldset {*/
+/*    flex-direction: column;*/
+/*}*/
+
+/*#genre {*/
+/*    justify-content: space-around;*/
+/*    width: 100%;*/
+/*    text-align: center;*/
+/*}*/
+
+/*#genre span {*/
+/*    border: 1px white solid;*/
+/*    border-radius: 10%;*/
+/*    margin: 1rem;*/
+/*    padding: 1rem;*/
+/*    background: black;*/
+/*    flex-basis: 33%;*/
+/*}*/
+
+/*input, select {*/
+/*    padding: .5rem;*/
+/*    font-size: 2.5rem;*/
+/*    margin: 2rem 0;*/
+/*    width: 80%;*/
+/*}*/
+
+/*button, footer {*/
+/*    font-size: 3rem;*/
+/*    border: none;*/
+/*}*/
+
+/*!**  shooting profil  **!*/
+/*#shoot form div {*/
+/*    margin: 15px;*/
+/*}*/
+
+
+/*  !*************!*/
+/* !** footer  **!*/
+/*!*************!*/
+
+/*footer {*/
+/*    text-align: center;*/
+/*}*/
+
+/*a i {*/
+/*    font-size: 5rem;*/
+/*    color: red;*/
+/*    text-shadow: black 2px 2px;*/
+/*}*/
+
+/*#minTarget {*/
+/*    text-align: center;*/
+/*}*/
+
+/*#minTarget button {*/
+/*    padding: 1rem;*/
+/*    border-radius: 50%;*/
+/*    background: black;*/
+/*}*/
+
+/*#logIn footer {*/
+/*    margin-top: 40px;*/
+/*}*/
+
+  /***********/
+ /** MODAL **/
+/***********/
+
+#homeScreen {
     position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     display: flex;
@@ -271,18 +296,80 @@ a i {
     align-items: center;
 }
 
-@media screen and (max-width: 600px) {
-
-    .background {
-        width: 100%;
-    }
-
-    .background div {
-        height: 12rem;
-    }
-
-    #halfYellow {
-        height: 6rem;
-    }
-
+.modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background: black;
+    border-radius: 15px;
+    margin: 1rem auto;
+    padding: 1rem 1rem;
+    box-shadow: inset white 0 0 1rem;
+    height: 80%;
+    width: 80%;
 }
+
+.modal footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.fa-long-arrow-alt-right {
+    color: green;
+    font-size: 5rem;
+}
+
+/*  !**************!*/
+/* !**  result  **!*/
+/*!**************!*/
+
+/*#fullScreen {*/
+/*    position: absolute;*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*    display: none;*/
+/*    !*display: flex;*!*/
+/*    flex-direction: column;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*}*/
+
+.result {
+    display: flex;
+    flex-direction: column;
+}
+
+#final {
+    display: none;
+}
+
+#number span, .result {
+    color: white;
+    border-radius: 1.5rem;
+    background: #00008b80;
+    flex-basis: 30%;
+    width: 60%;
+    box-shadow: inset #2196f3 0 0 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*@media screen and (max-width: 600px) {*/
+
+/*    .background {*/
+/*        width: 100%;*/
+/*    }*/
+
+/*    .background div {*/
+/*        height: 12rem;*/
+/*    }*/
+
+/*    #halfYellow {*/
+/*        height: 6rem;*/
+/*    }*/
+
+/*}*/
