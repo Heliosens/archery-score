@@ -313,7 +313,7 @@ a i {
 }
 
   /**************/
- /**  result  **/
+ /**  point  **/
 /**************/
 
 #fullScreen {
@@ -327,7 +327,7 @@ a i {
     align-items: center;
 }
 
-.result {
+.point {
     display: flex;
     flex-direction: column;
 }
@@ -336,7 +336,7 @@ a i {
     display: none;
 }
 
-#number span, .result {
+#number span, .point {
     color: white;
     border-radius: 1.5rem;
     background: #00008b80;
@@ -347,7 +347,6 @@ a i {
     justify-content: center;
     align-items: center;
 }
-
 
 /*@media screen and (max-width: 600px) {*/
 
