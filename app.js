@@ -10,7 +10,10 @@ let fullScreen = document.getElementById('fullScreen');
 let target = document.querySelector('.target').getElementsByTagName('div');
 // display current nbr of fly, current point, ending score
 let flyNbr = document.getElementById('flyNbr');
-let point = document.getElementById('point');
+
+// todo from id=point to class=point
+let point = document.getElementsByClassName('point');
+
 let final = document.getElementById('final');
 // validate data
 let go = document.querySelector('.fa-long-arrow-alt-right');
