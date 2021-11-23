@@ -98,6 +98,7 @@ for(let i = 0 ; i < target.length ; i++){
                 }
 
                 fullScreen.style.display = 'flex';
+
                 go.addEventListener('click', function (){
                     fullScreen.style.display = 'none';
                 })

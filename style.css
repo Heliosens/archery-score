@@ -314,7 +314,7 @@ a i {
 }
 
   /**************/
- /**  point  **/
+ /**  point   **/
 /**************/
 
 #fullScreen {
@@ -349,6 +349,8 @@ a i {
 
 .point {
     justify-content: space-evenly;
+    width: 10rem;
+    height: 10rem;
 }
 
 #number span {
