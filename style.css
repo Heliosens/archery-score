@@ -328,7 +328,7 @@ a i {
     align-items: center;
 }
 
-.point {
+#result span {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -338,16 +338,16 @@ a i {
     display: none;
 }
 
-#number span, .point {
+#number span, #result span {
     border-radius: 1.5rem;
     background: #00008b80;
-
     box-shadow: inset #2196f3 0 0 1rem;
     display: flex;
     align-items: center;
+    font-size: 4rem;
 }
 
-.point {
+#result span {
     justify-content: space-evenly;
     width: 10rem;
     height: 10rem;
@@ -355,7 +355,7 @@ a i {
 
 #number span {
     width: 60%;
-    flex-basis: 30%;
+    flex-basis: 25%;
     justify-content: center;
 }
 

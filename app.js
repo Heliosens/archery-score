@@ -12,7 +12,8 @@ let target = document.querySelector('.target').getElementsByTagName('div');
 let flyNbr = document.getElementById('flyNbr');
 
 // todo from id=point to class=point
-let point = document.getElementsByClassName('point');
+let point = document.getElementById('result').getElementsByTagName('span');
+console.log(point[0].innerHTML);
 
 let endScreen = document.getElementById('endScreen');
 let final = document.getElementById('final');
@@ -42,6 +43,9 @@ let fly = 0; // score for a fly
 let nbrFly = 0; // current number of fly
 let currentScore = 0;
 
+// todo array
+let oneFly = [];    // oneFly.push(a1);
+
 // user click on 3 value = display + ask validation
 // let test = shoot % 3;
 for(let i = 0 ; i < target.length ; i++){
@@ -58,6 +62,7 @@ for(let i = 0 ; i < target.length ; i++){
                 else {
                     a1 = i;
                 }
+                oneFly.push(a1);
                 shoot++;
                 break;
             case 1 : // second arrow
@@ -69,6 +74,7 @@ for(let i = 0 ; i < target.length ; i++){
                 else {
                     a2 = i;
                 }
+                oneFly.push(a2);
                 shoot++;
                 break;
             case 2 : // third arrow
@@ -80,21 +86,19 @@ for(let i = 0 ; i < target.length ; i++){
                 else {
                     a3 = i;
                 }
+                oneFly.push(a3);
                 shoot++;
-                nbrFly++;
 
                 // intermediate score
-                fly = [a1, a2, a3];
-                console.log(fly);
-                currentScore += fly;
-
+                currentScore += oneFly[0] + oneFly[1] + oneFly[2];
+                let tableFly = [[]];
+                tableFly[nbrFly] += oneFly;
+                nbrFly++;
+                console.log(tableFly);
                 flyNbr.innerHTML = nbrFly + " sur " + totalNbrOfFly;
 
                 for (let i = 0 ; i < point.length ; i++){
                     point[i].innerHTML = fly[i].toString();
-                    if(plus > 0){
-                        point[i].innerHTML += "<br> 10+ = " + plus;
-                    }
                 }
 
                 fullScreen.style.display = 'flex';
