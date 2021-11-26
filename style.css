@@ -114,12 +114,12 @@ header {
 #home a, #hello a {
     display: block;
     color: white;
-    border-radius: 1.5rem;
+    border-radius: 10% 10% 10% 10% / 50% 50% 50% 50%;
     background: black;
     padding: 1rem 1rem;
     width: 50%;
     margin: 4rem auto;
-    font-size: 2rem;
+    font-size: 4rem;
 }
 
 .session span {
@@ -157,6 +157,9 @@ header span {
     width: 100%;
     display: flex;
     flex-direction: column-reverse;
+    position: absolute;
+    top : 0;
+    z-index: -1;
 }
 
 .target div {

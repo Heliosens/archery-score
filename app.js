@@ -2,16 +2,20 @@
 // modal window for user choice
 let homeScreen = document.getElementById('homeScreen');
 let userChoice = document.getElementById('number').getElementsByTagName('span');
+
 // give main size
 let main = document.querySelector('main');
+
 // modal window to display result
 let fullScreen = document.getElementById('fullScreen');
+
 // listen target div
 let target = document.querySelector('.target').getElementsByTagName('div');
-// display current nbr of fly, current point, ending score
-let flyNbr = document.getElementById('flyNbr');
 
-// todo from id=point to class=point
+// display current nbr of fly, current point, ending score
+let textFlyNbr = document.getElementById('textFlyNbr');
+
+// to display points a1 to a3
 let point = document.getElementById('result').getElementsByTagName('span');
 console.log(point[0].innerHTML);
 
@@ -34,93 +38,71 @@ for(let i = 0 ; i < userChoice.length ; i++){
 
 // shoot = 1 arrow, fly = 3 arrows
 
-let shoot = 0;
-let a1 = 0;
-let a2 = 0;
-let a3 = 0;
-let plus = 0;
+let shoot = 0;  // 3 shoot nbr 0 to 2
+
+let plus = 0;   // nbr of 11 = 10+
 let fly = 0; // score for a fly
 let nbrFly = 0; // current number of fly
-let currentScore = 0;
+let currentScore = 0;   // 0 to total
 
-// todo array
-let oneFly = [];    // oneFly.push(a1);
+let oneFly = [];    // oneFly.push(a1 to a3);
+let resume = [];    // resume[oneFly[0], oneFly[0], oneFly[0]]
+let test = 0;
 
 // user click on 3 value = display + ask validation
-// let test = shoot % 3;
 for(let i = 0 ; i < target.length ; i++){
 
     target[i].addEventListener('click', function (){
 
-        switch (shoot % 3){
-            case 0 : // first arrow
-                // if 10+
-                if (i === 11){
-                    plus++;
-                    a1 = 10;
-                }
-                else {
-                    a1 = i;
-                }
-                oneFly.push(a1);
-                shoot++;
-                break;
-            case 1 : // second arrow
-                // if 10+
-                if (i === 11){
-                    plus++;
-                    a2 = 10;
-                }
-                else {
-                    a2 = i;
-                }
-                oneFly.push(a2);
-                shoot++;
-                break;
-            case 2 : // third arrow
-                // if 10+
-                if(i === 11){
-                    a3 = 10;
-                    plus++;
-                }
-                else {
-                    a3 = i;
-                }
-                oneFly.push(a3);
-                shoot++;
+        // switch (shoot % 3){
+        //     case 0 :        // first arrow
+        //         a1 = i;
+        //         shoot = oneFly.push(a1);    //
+        //         break;
+        //     case 1 : // second arrow
+        //         a2 = i;
+        //         shoot = oneFly.push(a2);
+        //         break;
+        //     case 2 : // third arrow
+        //         a3 = i;
+        //         shoot = oneFly.push(a3);
+        //         resume = resume.concat([oneFly]);
+        //         console.log("resume" + resume);
+        //         // intermediate score
+        //         currentScore = oneFly.reduce(function (accumulator, currentValue) {
+        //             return accumulator + currentValue;
+        //         });
+        //
+        //         console.log("score actuel " + currentScore);
+        //
+        //         nbrFly++;
+        //         textFlyNbr.innerHTML = nbrFly + " sur " + totalNbrOfFly;
+        //
+        //         for (let i = 0 ; i < point.length ; i++){
+        //             point[i].innerHTML = fly[i].toString();
+        //         }
+        //
+        //         fullScreen.style.display = 'flex';
+        //
+        //         go.addEventListener('click', function (){
+        //             fullScreen.style.display = 'none';
+        //         })
+        //
+        //         if (shoot === totalNbrOfFly * 3){
+        //             endScreen.style.display = "unset";
+        //             final.innerHTML = "Score final : " + currentScore;
+        //
+        //             shoot = 0;
+        //             a1 = 0;
+        //             a2 = 0;
+        //             a3 = 0;
+        //             plus = 0;
+        //             fly = 0;
+        //             nbrFly = 0;
+        //             currentScore = 0;
+        //         }
+        //         break;
+        // }
 
-                // intermediate score
-                currentScore += oneFly[0] + oneFly[1] + oneFly[2];
-                let tableFly = [[]];
-                tableFly[nbrFly] += oneFly;
-                nbrFly++;
-                console.log(tableFly);
-                flyNbr.innerHTML = nbrFly + " sur " + totalNbrOfFly;
-
-                for (let i = 0 ; i < point.length ; i++){
-                    point[i].innerHTML = fly[i].toString();
-                }
-
-                fullScreen.style.display = 'flex';
-
-                go.addEventListener('click', function (){
-                    fullScreen.style.display = 'none';
-                })
-
-                if (shoot === totalNbrOfFly * 3){
-                    endScreen.style.display = "unset";
-                    final.innerHTML = "Score final : " + currentScore;
-
-                    shoot = 0;
-                    a1 = 0;
-                    a2 = 0;
-                    a3 = 0;
-                    plus = 0;
-                    fly = 0;
-                    nbrFly = 0;
-                    currentScore = 0;
-                }
-                break;
-        }
     })
 }
