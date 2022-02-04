@@ -9,16 +9,6 @@
     <script src="https://kit.fontawesome.com/b3c591f1b4.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!--    <div class="background">-->
-    <!--        <div class="yellow">-->
-    <!--            <div id="halfYellow"></div>-->
-    <!--        </div>-->
-    <!--        <div class="red"></div>-->
-    <!--        <div class="blue"></div>-->
-    <!--        <div class="black"></div>-->
-    <!--        <div></div>&lt;!&ndash; white &ndash;&gt;-->
-    <!--        <div class="chocolate"></div>-->
-    <!--    </div>-->
     <main>
         <section class="target">
             <div class="chocolate">0</div>
@@ -37,18 +27,34 @@
             </div>
             <div id="plus">+</div>
         </section>
+
+        <section id="home">
+            <div>
+                <span>Bienvenue sur</span>
+                <h1 id="big">Archery score</h1>
+            </div>
+
+            <div>
+                <label for="pseudo">entrez votre nom</label>
+                <input id="pseudo" type="text" placeholder="Pseudo" name="pseudo">
+            </div>
+
+            <div>
+                <div>
+                    <label for="nbrOfFly">nombre de volées</label>
+                </div>
+                <select name="nbrOfFly" id="nbrOfFly">
+                    <option value="10" selected>10</option>
+                    <option value="20">20</option>
+                </select>
+            </div>
+            <a href="">
+                <?php
+                    include "blason.php";
+                ?>
+            </a>
+        </section>
     </main>
-
-    <header>
-        <h1 id="big">Archery score</h1>
-    </header>
-
-    <section id="home">
-        <a href="connexion/logIn.html">Connexion</a>
-        <a href="connexion/signIn.html">Inscription</a>
-        <a href="guest.html">Mode invité</a>
-    </section>
-
     <script src="app.js"></script>
 </body>
 </html>
