@@ -6,7 +6,7 @@ let CountScore = function (nbrVolley, elem){
     let result = [];        // final array
 
    let getPoint = function (a){
-       a = a === 11 ? "10+" : "a";
+       a = a === 11 ? "10+" : a.toString();
        shoot = volley.push(a)
    }
 

@@ -135,6 +135,10 @@ a {
     font-size: 4em;
 }
 
+#home a {
+    margin: 1rem;
+}
+
 .blazon {
     width: 100px;
 }
@@ -170,12 +174,6 @@ select {
 
 footer {
     text-align: center;
-}
-
-a i {
-    font-size: 5rem;
-    color: red;
-    text-shadow: black 2px 2px;
 }
 
   /***********/

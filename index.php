@@ -41,20 +41,21 @@
 
             <div>
                 <div>
-                    <label for="nbrOfFly">nombre de volées</label>
+                    <label for="nbrOfVolley">nombre de volées</label>
                 </div>
-                <select name="nbrOfFly" id="nbrOfFly">
+                <select name="nbrOfVolley" id="nbrOfVolley">
                     <option value="10" selected>10</option>
                     <option value="20">20</option>
                 </select>
             </div>
-            <a href="">
+            <a href="#" id="letsGo">
                 <?php
                     include "blason.php";
                 ?>
             </a>
         </section>
     </main>
+    <script src="countScore.js"></script>
     <script src="app.js"></script>
 </body>
 </html>
