@@ -7,7 +7,6 @@ Target is on background
 
 A section in front asks :
 
-    - name or pseudo
     - choice the number of volley for the session. (10 by default or 20)
 
 Section disappears when click the mini target link.

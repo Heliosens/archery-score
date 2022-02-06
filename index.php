@@ -28,31 +28,33 @@
             <div id="plus">+</div>
         </section>
 
-        <section id="home">
-            <div>
-                <span>Bienvenue sur</span>
-                <h1 id="big">Archery score</h1>
-            </div>
-
-            <div>
-                <label for="pseudo">entrez votre nom</label>
-                <input id="pseudo" type="text" placeholder="Pseudo" name="pseudo">
-            </div>
-
-            <div>
+        <section id="switch">
+            <div id="home">
                 <div>
-                    <label for="nbrOfVolley">nombre de volées</label>
+                    <span>Bienvenue sur</span>
+                    <h1 id="big">Archery score</h1>
                 </div>
-                <select name="nbrOfVolley" id="nbrOfVolley">
-                    <option value="10" selected>10</option>
-                    <option value="20">20</option>
-                </select>
+                <div>
+                    <div>
+                        <label for="nbrOfVolley">nombre de volées</label>
+                    </div>
+                    <select name="nbrOfVolley" id="nbrOfVolley">
+                        <option value="3" selected>3</option>
+                        <option value="10">10</option>
+                        <option value="20">20</option>
+                    </select>
+                </div>
+                <a href="#" id="letsGo">
+                    <?php
+                        include "blason.php";
+                    ?>
+                </a>
             </div>
-            <a href="#" id="letsGo">
-                <?php
-                    include "blason.php";
-                ?>
-            </a>
+        </section>
+        <section id="volleyScore">
+            <div>
+
+            </div>
         </section>
     </main>
     <script src="countScore.js"></script>

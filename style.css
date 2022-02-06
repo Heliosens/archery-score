@@ -43,10 +43,6 @@ a {
  /*  target */
 /***********/
 .target {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -99;
     height: 100%;
     width: 100%;
     display: flex;
@@ -124,7 +120,7 @@ a {
  /**  page  **/
 /************/
 
-#home {
+#home, #volleyScore {
     box-shadow: inset white 0 0 2rem;
     color: white;
     border-radius: .8em;
@@ -132,7 +128,6 @@ a {
     padding: 2rem;
     width: 80%;
     height: 80vh;
-    font-size: 4em;
 }
 
 #home a {
@@ -176,9 +171,29 @@ footer {
     text-align: center;
 }
 
-  /***********/
- /** MODAL **/
-/***********/
+  /*************/
+ /** section **/
+/*************/
+#switch {
+    display: flex;
+}
+
+#volleyScore {
+    display: none;
+}
+
+#switch, #volleyScore {
+    background-color: #ffffff80;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    justify-content: center;
+    align-items: center;
+}
+
 
 /*.modal {*/
 /*    height: 80%;*/
