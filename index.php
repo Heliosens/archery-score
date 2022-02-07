@@ -44,7 +44,7 @@
                         <option value="20">20</option>
                     </select>
                 </div>
-                <a href="#" id="letsGo">
+                <a href="#" class="next">
                     <?php
                         include "blason.php";
                     ?>
@@ -52,8 +52,22 @@
             </div>
         </section>
         <section id="volleyScore">
-            <div>
-
+            <div id="arrow">
+                <h2>Volée n° <span>0</span></h2>
+                <div>
+                    <span>a1</span>
+                    <span>a2</span>
+                    <span>a3</span>
+                </div>
+                <div id="currentScore">
+                    <span>total</span>
+                </div>
+                <a href="#" id="back">back</a>
+                <a href="#" class="next">
+                    <?php
+                    include "blason.php";
+                    ?>
+                </a>
             </div>
         </section>
     </main>

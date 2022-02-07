@@ -13,16 +13,15 @@ Section disappears when click the mini target link.
 
     IRL-> user shoot a volley of 3 arrows
 
-User clicks on the target three time
+On the third click : 
 
-on the third a section appears with 3 numbers and total :
-    
     - values are sort from the biggest to the smallest
     - each 11 is replace by "10+"
     - total is calculate
     - array is create
-        result = [["a1", "a2", "a3"], line count, number of 10+/11],
-    
+        result = [["a1", "a2", "a3"], total line, number of 10+/11],        
+    - a section appears with 3 numbers and total
+        
 when user valid the section disappears 
 
     - values go in final array
@@ -39,5 +38,5 @@ on the last validation
         
 on more validation 
 
-    array is convert in json file load on file directory
+    - array is convert in json file load on file directory
     

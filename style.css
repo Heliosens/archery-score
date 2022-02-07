@@ -16,7 +16,7 @@ body {
     text-align: center;
 }
 
-main, #home {
+main, #home, #volleyScore > div {
     display: flex;
     align-items: center;
 }
@@ -24,11 +24,6 @@ main, #home {
 main {
     height: 100vh;
     justify-content: center;
-}
-
-#home {
-    flex-direction: column;
-    justify-content: space-between;
 }
 
 section {
@@ -42,6 +37,7 @@ a {
   /***********/
  /*  target */
 /***********/
+
 .target {
     height: 100%;
     width: 100%;
@@ -120,7 +116,9 @@ a {
  /**  page  **/
 /************/
 
-#home, #volleyScore {
+#home, #volleyScore > div {
+    flex-direction: column;
+    justify-content: space-between;
     box-shadow: inset white 0 0 2rem;
     color: white;
     border-radius: .8em;
@@ -130,7 +128,7 @@ a {
     height: 80vh;
 }
 
-#home a {
+.next {
     margin: 1rem;
 }
 
@@ -194,6 +192,10 @@ footer {
     align-items: center;
 }
 
+#volleyScore span {
+    display: inline-block;
+    width: 13vw;
+}
 
 /*.modal {*/
 /*    height: 80%;*/

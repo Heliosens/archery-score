@@ -7,23 +7,25 @@ main.style.height = innerHeight + "px";
 // section for user choice
 let choice = document.getElementById('switch');
 let nbrOfVolley = document.getElementById('nbrOfVolley');
-let userChoice = document.getElementById('letsGo');
 
-// target
+// link as button
+let next = document.getElementsByClassName('next');
+
+// the target
 let target = document.querySelector(".target").getElementsByTagName('div');
 
 // section to display current score
 let volleyScore = document.getElementById('volleyScore');
-
-// switch section
-let nbrVolley;
-let nbr;
+let arrows = document.getElementById('arrow').getElementsByTagName('span')
 
 // count the score
-let result = [];        // final array
+let nbr;    // selected number of volley
+
 let session = new CountScore();
 
-userChoice.addEventListener('click', function (){
+// listen number of volley
+next[0].addEventListener('click', function (e){
+    e.preventDefault();
     nbr = nbrOfVolley.options[nbrOfVolley.selectedIndex].value;
     choice.style.display = "none";
     for(let i = 0 ; i < target.length ; i++){
@@ -33,14 +35,11 @@ userChoice.addEventListener('click', function (){
     }
 })
 
-
-
-// shoot = 1 arrow, volley = 3 arrows
-// let shoot = 0;  // 3 shoot nbr 0 to 2
-// let plus = 0;   // nbr of 11 = 10+
-// let nbrVolley = 0; // current number of volley
-// let currentScore = 0;   // 0 to total
-//
-// let test = 0;
-
+let test;
+next[1].addEventListener('click', function (e){
+    e.preventDefault();
+    volleyScore.style.display = 'none';
+    console.log("ici");
+    let test = arrows[1]
+})
 
