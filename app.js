@@ -21,10 +21,12 @@ let arrows = document.getElementById('arrow').getElementsByTagName('span')
 
 // count the score
 let nbr;    // selected number of volley
+let result = [];        // final array
+let line = [];
 
 let session = new CountScore();
 
-// listen number of volley
+// listen user choice = number of volley
 next[0].addEventListener('click', function (e){
     e.preventDefault();
     nbr = nbrOfVolley.options[nbrOfVolley.selectedIndex].value;
@@ -36,14 +38,13 @@ next[0].addEventListener('click', function (e){
     }
 })
 
-let result = [];        // final array
-let line = [];
-
+// redo select point
 back.addEventListener('click', function (){
     volleyScore.style.display = 'none';
     line = [];
 })
 
+// valid selected point
 next[1].addEventListener('click', function (e){
     e.preventDefault();
     volleyScore.style.display = 'none';
@@ -55,6 +56,10 @@ next[1].addEventListener('click', function (e){
         }
         result.push(line);
         console.log(result);
+    }
+    else {
+        target[0].parentElement.style.zIndex = "-10";
+
     }
 })
 

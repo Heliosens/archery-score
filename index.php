@@ -50,8 +50,6 @@
                     ?>
                 </a>
             </div>
-        </section>
-        <section id="volleyScore">
             <div id="arrow">
                 <h2>Volée n° <span>0</span></h2>
                 <div>
@@ -69,7 +67,11 @@
                     ?>
                 </a>
             </div>
+            <div id="finalScore">
+                <h2>Score</h2>
+            </div>
         </section>
+
     </main>
     <script src="countScore.js"></script>
     <script src="app.js"></script>
