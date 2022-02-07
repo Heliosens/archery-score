@@ -112,22 +112,6 @@ a {
     background: chocolate;
 }
 
-  /************/
- /**  page  **/
-/************/
-
-#home, #volleyScore > div {
-    flex-direction: column;
-    justify-content: space-between;
-    box-shadow: inset white 0 0 2rem;
-    color: white;
-    border-radius: .8em;
-    background: black;
-    padding: 2rem;
-    width: 80%;
-    height: 80vh;
-}
-
 .next {
     margin: 1rem;
 }
@@ -141,22 +125,8 @@ a {
     border-radius: 50%;
 }
 
-  /*************/
- /**  input  **/
-/*************/
-
-input, select {
-    text-align: center;
-}
-
-input {
-    padding: .5rem;
-    font-size: 2.5rem;
-    margin: 2rem 0;
-    width: 80%;
-}
-
 select {
+    text-align: center;
     width: 30%;
     font-size: 4rem;
 }
@@ -172,15 +142,28 @@ footer {
   /*************/
  /** section **/
 /*************/
+
+#home, #volleyScore > div, #finalResult > div {
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: inset white 0 0 2rem;
+    color: white;
+    border-radius: .8em;
+    background: black;
+    padding: 2rem;
+    width: 80%;
+    height: 80vh;
+}
+
 #switch {
     display: flex;
 }
 
-#volleyScore {
+#volleyScore, #finalResult {
     display: none;
 }
 
-#switch, #volleyScore {
+#switch, #volleyScore, #finalResult {
     background-color: #ffffff80;
     width: 100%;
     height: 100vh;
@@ -197,79 +180,11 @@ footer {
     width: 13vw;
 }
 
-/*.modal {*/
-/*    height: 80%;*/
-/*    width: 80%;*/
-/*    display: flex;*/
-/*    flex-direction: column;*/
-/*    justify-content: space-evenly;*/
-/*    align-items: center;*/
-/*    background: black;*/
-/*    border-radius: 15px;*/
-/*    margin: 1rem auto;*/
-/*    padding: 1rem 1rem;*/
-/*    box-shadow: inset white 0 0 1rem;*/
-/*}*/
+#finalResult td {
+    border: 1px solid white;
+    width: 30%;
+}
 
-/*#result {*/
-/*    width: 100%;*/
-/*    display: flex;*/
-/*    justify-content: space-evenly;*/
-/*    align-items: center;*/
-/*}*/
+#finalResult table {
 
-/*.fa-long-arrow-alt-right {*/
-/*    color: green;*/
-/*    font-size: 5rem;*/
-/*}*/
-
-  /**************/
- /**  point   **/
-/**************/
-
-/*#result span {*/
-/*    display: flex;*/
-/*    flex-direction: column;*/
-/*    justify-content: space-between;*/
-/*}*/
-
-/*#final {*/
-/*    display: none;*/
-/*}*/
-
-/*#number span, #result span {*/
-/*    border-radius: 1.5rem;*/
-/*    background: #00008b80;*/
-/*    box-shadow: inset #2196f3 0 0 1rem;*/
-/*    display: flex;*/
-/*    align-items: center;*/
-/*    font-size: 4rem;*/
-/*}*/
-
-/*#result span {*/
-/*    justify-content: space-evenly;*/
-/*    width: 10rem;*/
-/*    height: 10rem;*/
-/*}*/
-
-/*#number span {*/
-/*    width: 60%;*/
-/*    flex-basis: 25%;*/
-/*    justify-content: center;*/
-/*}*/
-
-/*@media screen and (max-width: 600px) {*/
-
-/*    .background {*/
-/*        width: 100%;*/
-/*    }*/
-
-/*    .background div {*/
-/*        height: 12rem;*/
-/*    }*/
-
-/*    #halfYellow {*/
-/*        height: 6rem;*/
-/*    }*/
-
-/*}*/
+}

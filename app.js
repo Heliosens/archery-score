@@ -18,6 +18,8 @@ let target = document.querySelector(".target").getElementsByTagName('div');
 // section to display current score
 let volleyScore = document.getElementById('volleyScore');
 let arrows = document.getElementById('arrow').getElementsByTagName('span')
+let finalResult = document.getElementById('finalResult');
+let tablePlace = finalResult.querySelector('div');
 
 // count the score
 let nbr;    // selected number of volley
@@ -29,7 +31,7 @@ let session = new CountScore();
 // listen user choice = number of volley
 next[0].addEventListener('click', function (e){
     e.preventDefault();
-    nbr = nbrOfVolley.options[nbrOfVolley.selectedIndex].value;
+    nbr = parseInt(nbrOfVolley.options[nbrOfVolley.selectedIndex].value);
     choice.style.display = "none";
     for(let i = 0 ; i < target.length ; i++){
         target[i].addEventListener('click', function () {
@@ -44,22 +46,12 @@ back.addEventListener('click', function (){
     line = [];
 })
 
+let volleyNbr;
 // valid selected point
 next[1].addEventListener('click', function (e){
     e.preventDefault();
     volleyScore.style.display = 'none';
-    line = [];
-    if(result.length < nbr){
-        console.log("ici");
-        for(let i = 1 ; i < 4 ; i++){
-            line.push(arrows[i].innerHTML);
-        }
-        result.push(line);
-        console.log(result);
-    }
-    else {
-        target[0].parentElement.style.zIndex = "-10";
+    session.getResult();
 
-    }
 })
 

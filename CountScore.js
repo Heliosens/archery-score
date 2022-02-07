@@ -30,7 +30,20 @@ let CountScore = function (){
     }
 
     this.getResult = function (){
-
+        line = [];
+        for(let i = 1 ; i < 4 ; i++){
+            line.push(arrows[i].innerHTML);
+        }
+        volleyNbr = result.push(line);
+        console.log(result);
+        console.log(volleyNbr);
+        console.log(nbr)
+        if(volleyNbr === nbr){
+            target[0].parentElement.style.zIndex = "-10";
+            // create table
+            let table = new FinalTable(tablePlace, result);
+            table.scoreTable();
+            finalResult.style.display = "flex";
+        }
     }
-
 }
