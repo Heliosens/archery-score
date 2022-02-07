@@ -178,9 +178,9 @@ footer {
 
 #finalResult td {
     border: 1px solid white;
-    width: 30%;
+    width: 25%;
 }
 
 #finalResult table {
-
+    width: 100%;
 }
