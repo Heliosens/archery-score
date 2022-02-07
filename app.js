@@ -10,6 +10,7 @@ let nbrOfVolley = document.getElementById('nbrOfVolley');
 
 // link as button
 let next = document.getElementsByClassName('next');
+let back = document.getElementById('back');
 
 // the target
 let target = document.querySelector(".target").getElementsByTagName('div');
@@ -35,11 +36,25 @@ next[0].addEventListener('click', function (e){
     }
 })
 
-let test;
+let result = [];        // final array
+let line = [];
+
+back.addEventListener('click', function (){
+    volleyScore.style.display = 'none';
+    line = [];
+})
+
 next[1].addEventListener('click', function (e){
     e.preventDefault();
     volleyScore.style.display = 'none';
-    console.log("ici");
-    let test = arrows[1]
+    line = [];
+    if(result.length < nbr){
+        console.log("ici");
+        for(let i = 1 ; i < 4 ; i++){
+            line.push(arrows[i].innerHTML);
+        }
+        result.push(line);
+        console.log(result);
+    }
 })
 
