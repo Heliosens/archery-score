@@ -26,6 +26,7 @@ let CountScore = function (){
         }
         // total volley
         elem[4].innerHTML = parseInt(elem[1].innerHTML) + parseInt(elem[2].innerHTML) + parseInt(elem[3].innerHTML);
+        // todo add line score to result ?
         volleyScore.style.display = "flex";
     }
 

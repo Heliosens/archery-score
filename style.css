@@ -16,7 +16,7 @@ body {
     text-align: center;
 }
 
-main, #home, #volleyScore > div {
+main, #home, #volleyScore > div, #finalResult > div {
     display: flex;
     align-items: center;
 }
@@ -130,10 +130,6 @@ select {
     width: 30%;
     font-size: 4rem;
 }
-
-  /*************/
- /** footer  **/
-/*************/
 
 footer {
     text-align: center;

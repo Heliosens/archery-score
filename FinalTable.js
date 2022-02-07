@@ -19,4 +19,8 @@ let FinalTable = function (elem, result){
         }
         elem.appendChild(table);
     }
+
+    this.endingScore = function (){
+
+    }
 }
