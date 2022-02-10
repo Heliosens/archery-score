@@ -30,7 +30,7 @@ let FinalTable = function (elem, result){
                 let oneShoot = document.createElement('td');
                 oneShoot.innerHTML = item;
 
-                // count of each volley
+                // value = count of each volley
                 if(item.includes("+")){
                     this.plus++;
                 }
@@ -38,7 +38,7 @@ let FinalTable = function (elem, result){
                 shootVolley.appendChild(oneShoot);
             }
 
-            // one case for each count
+            // one case for each count of volley
             let val = document.createElement("td");
             val.innerHTML = value.toString();
             val.className = "subtotal";
@@ -47,16 +47,18 @@ let FinalTable = function (elem, result){
         }
 
         // footer
-        let ftr = document.createElement('tr');
+        for(let i = 0 ; i < 2 ; i++){
+            let ftr = document.createElement('tr');
+            let td = document.createElement('td');
+            td.colSpan = 4;
+            td.className = "total";
+            tfoot.appendChild(ftr).appendChild(td);
+        }
 
-        let td = document.createElement('td');
-        td.colSpan = 4;
-        td.id = "total";
-        ftr.appendChild(td);
         // add created case in place
         table.appendChild(thead).appendChild(htr).appendChild(th);
         table.appendChild(tbody);
-        table.appendChild(tfoot).appendChild(ftr);
+        table.appendChild(tfoot);
         elem.appendChild(table);
     }
 
@@ -67,8 +69,8 @@ let FinalTable = function (elem, result){
         for (let idx of item){
             total += parseInt(idx.innerHTML);
         }
-        let totalCase = document.querySelector("#total");
-
-        totalCase.innerHTML = total + " / dont " + this.plus + " 10+"
+        let totalCase = document.getElementsByClassName('total');
+        totalCase[0].innerHTML = total + " points";
+        totalCase[1].innerHTML = "nombre de 10+ : " + this.plus
     }
 }

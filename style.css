@@ -30,6 +30,10 @@ section {
     font-size: 5vh;
 }
 
+#finalResult {
+    font-size: 3vh;
+}
+
 a {
     text-decoration-line: none;
 }
@@ -191,4 +195,15 @@ footer {
 
 .subtotal {
     font-weight: bold;
+    background-color: white;
+    color: black;
+}
+
+tfoot {
+    background-color: white;
+    color: black;
+}
+
+tfoot tr:last-child {
+    font-size: 2vh;
 }
