@@ -43,7 +43,9 @@ let CountScore = function (){
             // create table
             let table = new FinalTable(tablePlace, result);
             table.scoreTable();
+            table.totalResult();
             finalResult.style.display = "flex";
         }
     }
 }
+

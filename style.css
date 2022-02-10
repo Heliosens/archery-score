@@ -34,6 +34,10 @@ a {
     text-decoration-line: none;
 }
 
+.btn {
+    width: 70%;
+}
+
   /***********/
  /*  target */
 /***********/
@@ -176,11 +180,15 @@ footer {
     width: 13vw;
 }
 
-#finalResult td {
+#finalResult td, #finalResult th {
     border: 1px solid white;
     width: 25%;
 }
 
 #finalResult table {
     width: 100%;
+}
+
+.subtotal {
+    font-weight: bold;
 }

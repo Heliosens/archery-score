@@ -52,6 +52,4 @@ next[1].addEventListener('click', function (e){
     e.preventDefault();
     volleyScore.style.display = 'none';
     session.getResult();
-
 })
-
