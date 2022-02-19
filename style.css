@@ -66,9 +66,9 @@ a {
 #plus {
     position: absolute;
     top: 0;
-    left: 40%;
-    width: 20%;
-    height: 5%;
+    left: 35%;
+    width: 30%;
+    height: 8%;
     border-radius: 50% / 0 0 100% 100%;
     border: black 1px dashed;
     font-size: 5rem;
@@ -147,26 +147,6 @@ footer {
  /** section **/
 /*************/
 
-#home, #volleyScore > div, #finalResult > div {
-    flex-direction: column;
-    justify-content: space-between;
-    box-shadow: inset white 0 0 2rem;
-    color: white;
-    border-radius: .8em;
-    background: black;
-    padding: 2rem;
-    width: 80%;
-    height: 80vh;
-}
-
-#switch {
-    display: flex;
-}
-
-#volleyScore, #finalResult {
-    display: none;
-}
-
 #switch, #volleyScore, #finalResult {
     background-color: #ffffff80;
     width: 100%;
@@ -179,18 +159,49 @@ footer {
     align-items: center;
 }
 
+#home, #volleyScore > div, #finalResult > div {
+    box-shadow: inset white 0 0 2rem;
+    color: white;
+    border-radius: .8em;
+    background: black;
+    padding: 2rem;
+}
+
+#home, #volleyScore > div, #finalResult div {
+    flex-direction: column;
+    justify-content: space-between;
+    width: 80%;
+    height: 80vh;
+}
+
+#switch {
+    display: flex;
+}
+
+#volleyScore {
+    display: none;
+}
+
+#finalResult {
+    display: none;
+}
+
 #volleyScore span {
     display: inline-block;
     width: 13vw;
 }
 
-#finalResult td, #finalResult th {
+#tablePlace td, #tablePlace th {
     border: 1px solid white;
     width: 25%;
 }
 
-#finalResult table {
+#tablePlace table {
     width: 100%;
+}
+
+#tablePlace {
+    overflow: auto;
 }
 
 .subtotal {

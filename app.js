@@ -1,5 +1,4 @@
 // get elements
-
 // main size
 let main = document.querySelector('main');
 main.style.height = innerHeight + "px";
@@ -19,7 +18,7 @@ let target = document.querySelector(".target").getElementsByTagName('div');
 let volleyScore = document.getElementById('volleyScore');
 let arrows = document.getElementById('arrow').getElementsByTagName('span')
 let finalResult = document.getElementById('finalResult');
-let tablePlace = finalResult.querySelector('div');
+let tablePlace = finalResult.querySelector('#tablePlace');
 
 // count the score
 let nbr;    // selected number of volley
@@ -40,7 +39,7 @@ next[0].addEventListener('click', function (e){
     }
 })
 
-// redo select point
+// back to select point
 back.addEventListener('click', function (){
     volleyScore.style.display = 'none';
     line = [];
