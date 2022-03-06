@@ -31,9 +31,9 @@ do it for number of volley
 on the last validation
 
     - display all values in array :
-        [["a1", "a2", "a3"], line count, number of 10+/11],
-        [["a1", "a2", "a3"], line count, number of 10+/11],
-        [["a1", "a2", "a3"], line count, number of 10+/11],
+        [["a1", "a2", "a3"], line count, number of 10+],
+        [["a1", "a2", "a3"], line count, number of 10+],
+        [["a1", "a2", "a3"], line count, number of 10+],
         [result, , number of 10+/11]
         
 on more validation 

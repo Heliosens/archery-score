@@ -4,7 +4,7 @@ let main = document.querySelector('main');
 main.style.height = innerHeight + "px";
 
 // section for user choice
-let choice = document.getElementById('switch');
+let choice = document.getElementById('choice');
 let nbrOfVolley = document.getElementById('nbrOfVolley');
 
 // link as button
@@ -16,7 +16,7 @@ let target = document.querySelector(".target").getElementsByTagName('div');
 
 // section to display current score
 let volleyScore = document.getElementById('volleyScore');
-let arrows = document.getElementById('arrow').getElementsByTagName('span')
+let arrows = document.getElementById('arrow').getElementsByTagName('span');
 let finalResult = document.getElementById('finalResult');
 let tablePlace = finalResult.querySelector('#tablePlace');
 
